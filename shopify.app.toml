@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "token-of-trust"
+client_id = "f30468c6b9fb5cdb63dde91c282c07dd"
+application_url = "https://resolution-anger-catalyst-everybody.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_script_tags,read_script_tags,read_orders,write_files,write_themes,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://resolution-anger-catalyst-everybody.trycloudflare.com/auth/callback",
+  "https://resolution-anger-catalyst-everybody.trycloudflare.com/auth/shopify/callback",
+  "https://resolution-anger-catalyst-everybody.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "token-of-trust-inc.myshopify.com"

@@ -1,0 +1,22 @@
+{
+  "name": "token of trust",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "^3.0.0",
+    "@shopify/cli": "^3.0.0",
+    "@shopify/ui-extensions": "2023.7.2",
+    "@shopify/ui-extensions-react": "2023.7.2",
+    "react": "^18.2.0",
+    "sqlite3": "^5.1.6"
+  }
+}
